@@ -1,0 +1,87 @@
+ /* Estilos específicos para la calculadora dentro de la entrada */
+        .calculator-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .calculator {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .calculator h2 {
+            margin-bottom: 20px;
+            color: #444;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .row {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            text-align: left;
+        }
+        .input-group label {
+            font-size: 14px;
+            color: #555;
+            font-weight: 500;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        .input-group input:focus {
+            outline: none;
+            border-color: #6a11cb;
+            box-shadow: 0 4px 8px rgba(106, 17, 203, 0.2);
+        }
+        .input-group input[readonly] {
+            background-color: #f9f9f9;
+            cursor: not-allowed;
+            color: #777;
+        }
+        .button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        #sellRate {
+            background-color: #ffe5e5;
+        }
+        #buyRate {
+            background-color: #e5ffe5;
+        }
+        .result {
+            font-size: 16px;
+            font-weight: 500;
+            color: #444;
+            margin-top: 10px;
+        }
